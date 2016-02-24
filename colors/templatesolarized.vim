@@ -30,7 +30,10 @@
 " one thing that really confuses me is that I can give highlighting to that
 " syntax group vimVar and all syntax items inside the vimVar syntax group will
 " get highlighted. Its almost as if syntax groups and highlight groups are
-" actually the same thing? I'm not sure about the internals though.
+" actually the same thing? Looking at line 3401 of :help syntax seems to
+" suggest this. Also see :help E414. Line 4488 of :help syntax seems to flat
+" out say that highlight and syntax groups are in fact the same. I'm not sure
+" about the internals though.
 
 " Initialize the colorscheme by removing all existing highlighting.
 highlight clear
